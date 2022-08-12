@@ -30,6 +30,6 @@ class linearregression:
         return MAE
     
     def R2(self,data):
-        R2=1-sum([(y_org - y_pred)**2 for y_org,y_pred in zip(data['Y'],data['Y_PRIDECT'])])/sum([(y_pred - y_mean)**2 for y_pred,y_mean in zip(data['Y_PRIDECT'],data['Y_MEAN'])])
+        R2=1-sum([(y_org - y_pred)**2 for y_org,y_pred in zip(data['Y'],data['Y_PRIDECT'])])/sum([(y_org - y_mean)**2 for y_org,y_mean in zip(data['Y'],data['Y_MEAN'])])
         return R2
     
